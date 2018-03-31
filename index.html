@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trialfacts Web ad</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+	<style type="text/css">
+  #map {
+    height: 50%;
+
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+#containerIntro h6,
+#containerIntro p {
+    display: inline;
+  
+
+
+}
+.btn {
+  background: #cf1414;
+  background-image: -webkit-linear-gradient(top, #cf1414, #b82b2b);
+  background-image: -moz-linear-gradient(top, #cf1414, #b82b2b);
+  background-image: -ms-linear-gradient(top, #cf1414, #b82b2b);
+  background-image: -o-linear-gradient(top, #cf1414, #b82b2b);
+  background-image: linear-gradient(to bottom, #cf1414, #b82b2b);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #d60808;
+  background-image: -webkit-linear-gradient(top, #d60808, #f20c33);
+  background-image: -moz-linear-gradient(top, #d60808, #f20c33);
+  background-image: -ms-linear-gradient(top, #d60808, #f20c33);
+  background-image: -o-linear-gradient(top, #d60808, #f20c33);
+  background-image: linear-gradient(to bottom, #d60808, #f20c33);
+  text-decoration: none;
+}
+	</style>
+
+<script type="text/javascript">
+	
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -33.881761, lng: 151.048632},
+    zoom: 15
+  });
+
+  var infowindow = new google.maps.InfoWindow();
+  var service = new google.maps.places.PlacesService(map);
+
+  service.getDetails({
+    placeId: 'ChIJzxEKu327EmsRTcJazRN32u0'
+  }, function(place, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+          'Place ID: ' + place.place_id + '<br>' +
+          place.formatted_address + '</div>');
+        infowindow.open(map, this);
+      });
+    }
+  });
+}
+</script>
+</head>
+<body>
+		<div class="container">
+
+
+		<h2>Have You Noticed a Decline in Your Memory? Exercise May Help</h2>
+			<br>
+			<br>
+				<div class="row">
+			
+								<div class="col-md-8">
+
+									<div id="containerIntro">
+									<h6>Research Centre:</h6>
+									<p>The University of Sydney</p>
+									</div>
+
+
+								
+									<div id="containerIntro">
+									<h6>Location:</h6>
+									<p>Cumberland Campus, The University of Sydney, 75 East St Lidcombe, NSW</p>
+									</div>
+
+
+						
+
+									<div id="containerIntro">
+									<h6>Lead Doctor:</h6>
+									<p>Dr. Maria Fiatarone Singh</p>
+									</div>
+
+									<div id="containerIntro">
+									<h6>Ethics Committee:</h6>
+									<p>This study has been reviewed and approved by The University of Sydney Human Research Ethics Committee</p>
+									</div>
+
+									<br>
+
+									<div class="row">
+						<div class="col-md-7">		
+								<h6>Background</h6>
+									<p>
+										Mild Cognitive Impairment (MCI) causes a slight but noticeable decline in mental abilities, such as memory loss and impaired thinking. People with MCI have a much higher risk of going on to develop dementia.
+
+Previous research has shown that regular exercise may help improve brain health and prevent dementia. This study is comparing the effectiveness of three different kinds of exercise on memory and thinking abilities. 
+This study seeks men and women aged 60+ who have noticed a slight decline in their memory and/or other mental abilities. Participants will be randomly assigned to one of three different exercise training groups:<br> a) Strength training group <br>b) Aerobic training group  <br> c) Balance, toning & mobility training group<br>  Participants will be invited to attend 3 supervised exercise sessions per week for 12 months at the research site in Lidcombe.
+
+									</p>
+						</div>	
+
+						<div class="col-md-5">
+								<div class="img" style="background-image: url('images/pic.png');width: 100%;height:500px; background-repeat: no-repeat;background-size: contain;float: left;"></div>
+
+
+						</div>
+
+									</div>
+									
+
+	
+
+
+								</div>
+
+								<div class="col-md-3 ">
+									<div class="box"  style="background-color: 	#12121D;color: white;  padding-left: 5%;padding-right: 5%; padding-top: 5%; height: 250px; ">
+										<center>
+										<h5>Next Steps</h5>
+										<br>
+										<p style="font-size: 13px;">1. Complete a brief questionnaire</p>
+										<p style="font-size: 13px;">2. Speak with a trial coordinator</p>
+										</center>
+
+										<center> <a href="https://docs.google.com/forms/d/111SSgsl9vjXZ7FZfVmiEHSpwVGZZHG20UZefXYkuZ1c/edit"><button class="btn">Click Here</button></a>  </center>
+									</div>
+									<br>
+									<center><h6>Trial Location</h6></center>
+									<div id="map"></div>
+									<br>
+									<p style="font-size: 10px;">Click the above for a larger map</p>
+									
+									
+								</div>
+
+						
+		
+
+				</div>
+
+
+				<div class="row">
+				<div class="col-md-6">
+					
+					<h6>Benefits to Participation</h6>
+
+				<ul>
+  					<li>You may experience an improvement in your memory and other aspects of your physical and mental well-being.</li>
+  					<li>You will receive supervised exercise training sessions 3 days per week for 1 year at no cost to yourself.</li>
+  					<li>You will receive a comprehensive geriatric assessment by the study physician and research team, including a physical examination, stress test, bone scan, MRI scan of your brain, metabolic and cardiovascular health profile, evaluation of your nutritional status, fitness assessment, fall risk assessment, and full evaluation of your cognitive function. </li>
+  					<li>You receive free parking at the research site.</li>
+  					<li>You will be helping to advance medical research.</li>
+				</ul>  
+
+				</div>
+					
+
+
+
+				</div>
+					<div class="row">
+				<div class="col-md-6">
+					
+					<h6>Your Rights</h6>
+
+				<ul>
+  					<li>If you decide to participate in the study and later feel that you no longer wish to be part of it, you may withdraw at any time.</li>
+  					<li>Your records relating to this study and any other information received will be kept strictly confidential, except as required by the law.</li>
+  					<li>Qualified health professionals will monitor your health as it relates to the study.</li>
+				</ul>  
+
+				</div>
+					
+
+
+
+				</div>
+
+
+
+									<div class="row">
+				<div class="col-md-6">
+					
+					<h6>Who Can Participate?</h6>
+					<p>Men and women aged 60+ years old who:</p>
+
+				<ul>
+  					<li>Have noticed a slight decline in their memory and/or other mental abilities</li>
+  					<li>Have not been diagnosed with dementia or a progressive neurological disease (such as Parkinson’s Disease)</li>
+  					<li>Are able to walk without the assistance of another person (use of assistive device is fine)</li>
+  					<li>Do not exercise more than 2.5 hours per week at moderate or vigorous intensity</li>
+  					<li>Are able to attend 3 exercise sessions per week at the research site over 12 months</li>
+  					<li>Do not plan to be away for 4 or more consecutive weeks over the next 12 months, and are not planning to move.</li>
+				</ul>  
+
+				</div>
+					
+
+
+
+				</div>
+
+
+				
+		</div>
+
+
+
+<script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmuFCTkCWD-Bccv7n-GPZIbp0weDtEXMc&libraries=places&callback=initMap">
+</script>
+
+
+
+
+
+</body>
+</html>
